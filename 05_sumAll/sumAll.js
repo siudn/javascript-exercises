@@ -1,16 +1,3 @@
-/*
-const sumAll = function(start, end) {
-    if (start > end) {}
-    if (start < 0 || end < 0) {return "ERROR"};
-    if (typeof start != "number" || typeof end != "number") {return "ERROR"};
-    let total = 0;
-    for (let i = start; i <= end; i++) {
-        total += i;
-    }
-    return total;
-};
-*/
-
 const sumAll = function(...args) {
     if (args.length > 2) {return "ERROR"};
     if (args[0] > args[1]) {args.reverse()};
