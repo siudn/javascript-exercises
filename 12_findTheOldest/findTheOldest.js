@@ -2,7 +2,7 @@ const findTheOldest = people => {
     return people.reduce((oldest, current) => {
         const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
         const currentAge = getAge(current.yearOfBirth, current.yearOfDeath);
-        return oldestAge < currentAge ? currentPerson : oldest;
+        return oldestAge < currentAge ? current : oldest;
     })
 };
 
